@@ -1,0 +1,116 @@
+Assignment- 1      JavaScript
+
+Q.1- Write a program that  grades students  based on their marks.
+Ans:     var marks = 40;
+
+       if (marks > 90) {
+             console.log("Student will get A grade");
+         } else if (marks > 70 && marks <= 90) {
+              console.log("Student will get B grade");
+        } else if (marks > 50 && marks <= 70) {
+             console.log("Student will get C grade");
+        } else {
+            console.log("Student will get F grade");
+    }
+
+Q.2- Generate numbers between any 2 ,given  numbers .
+Ans : 
+      const num1 = 10;
+     const num2 = 25;
+
+    for (let i = num1; i <= num2; i++) {
+       console.log(i);
+     }
+
+Q.3-  Use a nested ternary operator to check that a number is positive, negative or zero. You have to print “positive” if the number is positive and similarly for negative and zero also.
+Ans: 
+       const number =1000;
+      Const result=
+      Number >0 ? “ positive ” : number <0 ? “ negative ” : “ zero”;
+      console.log(result);
+
+Q.4- Describe the use  of the comma operator in JavaScript and provide an example.
+Ans - Comma operator (,) : It allows to combine multiple expressions into a single expression . It evaluates each of its operands from left to right and returns the value of the rightmost operand.
+Ex 1. 
+var x = (5, 10);
+
+console.log(x); // Outputs 10
+
+Ex 2.
+for (var i = 0, j = 10; i < 5; i++, j--) {
+    console.log(i + " " + j);
+}
+
+Q5. You're creating a basic login system. Make a login function with two things : a username and a password. Check if the username is "admin" and the password is "12375". If they're both correct, show "Login successful"; if not, show "Invalid  credentials."
+Ans :     function login(username,password)
+             {        const correctUsername=”admin”;
+                      Const correctPassword=”12345”;
+                  if(username==correctUsername && password=correctPassword)
+                  {    
+                          console.log(“Login successful”);
+                  }else
+                  {
+                        console.log(“ Invalid credentials”);
+                  }
+             }
+         login(“admin” ,”12345”);// correct credentials
+        login(“user”,”@pass123”);// Incorrect credentials
+
+
+Q.6- You are working on an e-commerce platform. Write a JavaScript program that takes the payment
+method ("credit", "debit", or "paypal") as input and uses  a switch statement to determine and print the processing fee associated with each payment method. For example, "credit" may have a processing fee of 2%, "debit" 1.5%, and "paypal" 3%.
+
+Ans -  let x = "credit";
+           let y = "debit";
+           let z = "paypal";
+
+switch (x) {
+    case "credit":
+        console.log("2%");
+        break;
+    case "debit":
+        console.log("5%");
+        break;
+    case "paypal":
+        console.log("3%");
+        break;
+    default:
+        console.log("Unknown payment method");
+}
+
+
+Q.7- You are building a weather application. Write a JavaScript program that takes the current temperature as input and uses the conditional (ternary) operator to determine and print the weather condition. If the temperature is above 30°C, the condition is "Hot"; otherwise, it is "Moderate".
+
+Ans - var temperature=40;
+        
+    temperature>30 ? console.log(“Hot ”): console.log(“Moderate”);
+
+
+
+Q.8- You are creating a program to calculate the sum of numbers. Write a JavaScript program that takes a positive integer as input and uses a do-while loop to calculate and print the sum of all numbers from 1 to the given integer.
+
+Ans–   function calculateSum(n)
+           {
+              if(n<=0 || !Number.isInteger(n))
+             { 
+                    console.log(“enter positive number ”);
+                    return;
+            }
+                 let sum=0;
+                 let i=1;
+          do{
+                      sum+=i;
+                      i++;     
+                  } while(i<=n);
+                 
+console.log(“sum of number from 1 to n is ”) ;
+}
+calculateSum(5);
+
+
+
+	
+
+
+
+
